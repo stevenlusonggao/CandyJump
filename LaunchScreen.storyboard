@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chalkduster.ttf">
+            <string>Chalkduster</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otherbackground" translatesAutoresizingMaskIntoConstraints="NO" id="FSl-W7-Fxp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="e0r-o6-Kzw">
+                                <rect key="frame" x="94" y="127" width="240" height="163"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIA-0H-XIr">
+                                <rect key="frame" x="131" y="312" width="153" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="JEv-rM-SKu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" red="0.96294080334084775" green="0.97056452759491185" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mIA-0H-XIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="CmV-SK-HAo"/>
+                            <constraint firstItem="FSl-W7-Fxp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="D2S-Z5-zGn"/>
+                            <constraint firstItem="FSl-W7-Fxp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="E5w-Gd-5Uk"/>
+                            <constraint firstItem="e0r-o6-Kzw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Gf1-pU-Wc1"/>
+                            <constraint firstItem="FSl-W7-Fxp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="VFL-cz-Aqh"/>
+                            <constraint firstItem="mIA-0H-XIr" firstAttribute="top" secondItem="e0r-o6-Kzw" secondAttribute="bottom" constant="22" id="ba9-n5-CAd"/>
+                            <constraint firstItem="FSl-W7-Fxp" firstAttribute="centerX" secondItem="mIA-0H-XIr" secondAttribute="centerX" id="gWQ-Pj-9vw"/>
+                            <constraint firstItem="e0r-o6-Kzw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="lu8-C9-FLR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mIA-0H-XIr" secondAttribute="bottom" constant="371" id="qMT-lh-6jj"/>
+                            <constraint firstAttribute="trailing" secondItem="FSl-W7-Fxp" secondAttribute="trailing" id="qMl-NH-tLE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e0r-o6-Kzw" secondAttribute="trailing" constant="80" id="z8P-yw-4AI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="247" height="158"/>
+        <image name="otherbackground" width="751" height="1434"/>
+    </resources>
+</document>
